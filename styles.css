@@ -1,23 +1,47 @@
 
-body{                        <!--这是一段注释。注释不会在浏览器中显示。-->
-    width: 100vw;            <!--棋盘的大小>
+body {
+    width: 100vw;      
     height: 100vh;
-    display:flex;       
-    align-item:center;            <!--中心对齐>
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin:0;                        <!--让他的边缘为零>
+    margin: 0;            
 }
 
-.game-pane {                         <!--边界设定>
-     border-style: solid;                        
-     border-width:1px;
-     border-color:#ccc;
+.game-pane {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
 
-     border-shadow:2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
 }
 
-.cell{                               <!--单个小方格>
+.cell {
     background-color: #ccc;
     width: 1.5em;
-    height:1.5cm;
+    height: 1.5em;
+
+    border-style: outset;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+.clear {
+    border-style: solid;
+    border-color: #eee;
+    background-color: #eee;
+}
+
+.cell.landmine {
+    background-color: orange;
+}
+
+.cell.landmine.exploded {
+    background-color:Violet);
+}
+
+.cell.landmine.success {
+    background-color: green;
 }
