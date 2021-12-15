@@ -39,7 +39,7 @@ body {
 }
 
 .cell.landmine.exploded {
-    background-color:Violet);
+    background-color:Violet;
 }
 
 .cell.landmine.success {
