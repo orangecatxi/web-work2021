@@ -12,6 +12,7 @@ function renderBoard(PaneRows, PaneCols, grid) {
             cellEl.addEventListener("click", (e)=> {
                 if (grid[x][y].count === -1) {
                     explode(grid, x, y, PaneRows, PaneCols)
+                    alert("boom!")
                     return;//16
                 }
 
@@ -99,7 +100,7 @@ function initialize(PaneRows, PaneCols, numMines) {
     }
     return grid;
 }
-//116行代码
+//116
 function searchClearArea(grid, x, y, PaneRows, Panecols) {
     let gridCell = grid[x][y];
     gridCell.clear = true;
@@ -116,7 +117,7 @@ function searchClearArea(grid, x, y, PaneRows, Panecols) {
         let gridCell = grid[cellRow][cellCol];
 
         console.log(cellRow, cellCol, gridCell);
-        //129
+       
         if (!gridCell.clear) {
             gridCell.clear = true;
             gridCell.cellEl.classList.add("clear");
@@ -145,7 +146,7 @@ function explode(grid, x, y, PaneRows, PaneCols) {
         }
     }
 }
-   //143
+   
 function checkAllClear(grid) {
     for (let row = 0; row < grid.length; row ++) {
         for (let col = 0; col < grid.length; col ++) {
@@ -155,7 +156,7 @@ function checkAllClear(grid) {
             }
         }
     }
-    //155
+    
     for (let row = 0; row < grid.length; row ++) {
         for (let col = 0; col < grid.length; col ++) {
             let cell = grid[row][col];
@@ -226,8 +227,8 @@ function basicset(e) {
     let resest = document.querySelector("#resest");
     resest.addEventListener("click", (e)=> {
         toclear();
+        let grid = initialize(9,9,9);
+        renderBoard(9, 9, grid);
     });  
 }
 basicset();
-let grid = initialize(9,9,9);
-        renderBoard(9, 9, grid);

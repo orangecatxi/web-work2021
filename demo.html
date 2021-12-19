@@ -4,34 +4,34 @@
 </head>
 <body>
 <div class = " thegame">
-  <table id="board"></table>
   <div class ="title">
     <b>
-      <span>扫雷小游戏
-      </span>
+      <span>扫雷小游戏</span>
     </b>
   </div>
 
   <div class="menu"> 
-    <a href="javascript:_123(0)"id = "0">初级</a>
+    <a href="javascript:_123(1)" class = "diffiset"id = "0">初级</a>
     &nbsp;
-    <a href="javascript:_123(1)"  id = "1">中级</a>
+    <a href="javascript:_123(2)" class = "diffiset"  id = "1">中级</a>
     &nbsp;
-    <a href="javascript:_123(2)" id = "2">高级</a>
+    <a href="javascript:_123(3)" class = "diffiset" id = "2">高级</a>
     &nbsp;
-    <a href="javascript:_123(3)"id = "3">自定义</a>
+    <a href="javascript:_123(4)" class = "diffiset"id = "3">自定义</a>
   </div>
   &nbsp;
 
-  <div class="Minetag">
-    <div id = "MineNum">
+<div class="Minetag">
+  <div id = "numMines">
 雷数
-    </div>    
-    <div id = " countdown">
-倒计时
-    </div>
   </div>
-<a href="javascript:_123(7)">重置</a>
+  <div id = "resest">
+重置
+  </div>
+  <div class="game-pane">
+    <table id="board"></table>
+  </div>
+</div>
 <script src="script.js"></script>
 </body> 
 </html> 
