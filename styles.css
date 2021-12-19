@@ -1,13 +1,13 @@
 body {
+    background-image: url("背景.jpg");
     display: flex;
     align-items: center;
     margin-top: 130px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
-    margin: 8px;
+    margin: 8px
 }
-
 .game-pane {
     border-style: solid;
     border-color: #d4dbdbd4;
@@ -18,10 +18,10 @@ body {
 .cell {
     background-color: #8c8f8dd4;
     width: 1.2em;
-    height: 1.2em;
+    height:1.2em;
     text-align: center;
     border-style: outset;
-    border-color: #868886e8;
+    border-color: #8ca08ce8;
 }
 
 .cell:hover {
@@ -81,13 +81,6 @@ background-color: violet;
 #resest:hover {
     cursor: default;
 }
-
-#countdown {
-    width: 40px;
-    height: 27px;
-    background-color: rgb(250, 7, 7);
-}
-
 .thegame {
     margin: 50px auto;
     background:#cdddbdc7;;

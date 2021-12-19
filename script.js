@@ -169,6 +169,7 @@ function checkAllClear(grid) {
     }
     return true;
 }
+
 //不同等级的设定
 function toclear(e) {
         let deltr = document.getElementsByTagName("tr") ;
